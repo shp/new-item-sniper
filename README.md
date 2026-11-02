@@ -17,7 +17,8 @@ The only one not preinstalled with Node is otpauth
 {
     "ROBLOSECURITY": string,
     "AUTH_KEY": string,
-    "SCAN_INTERVAL": number
+    "SCAN_INTERVAL": number,
+    "BUY_COLLECTIBLES": boolean
 }
 ```
 
