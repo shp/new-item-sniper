@@ -1,33 +1,28 @@
 # New Item Sniper for Roblox
-## Run
+## run
 This was made using Node and NPM so it is recommended to use that to run and package manage.
-> npm start
+> npm start\n
 > node index.js
 
 ## dependencies
 The only one not preinstalled is otpauth
 > npm i otpauth
 
-## Config
-
-{
-    "ROBLOSECURITY": string,
-    "AUTH_KEY": string,
-    "SCAN_INTERVAL: number
-}
+## config
+{\n\t"ROBLOSECURITY": string,\n\t"AUTH_KEY": string,\n\t"SCAN_INTERVAL: number\n}
 
 ### ROLBOSECURITY
-> Type: string
-> Description: Put your .ROBLOSECURITY cookie from roblox as the value
+> Type: string\n
+> Description: Put your .ROBLOSECURITY cookie from roblox as the value\n
 
 ### AUTH_KEY
-> Type: string
-> Description: You need to setup 2FA so you get a code from an auth app, then put the key there, it should be like a 26 letter alphanumeric string
+> Type: string\n
+> Description: You need to setup 2FA so you get a code from an auth app, then put the key there, it should be like a 26 letter alphanumeric string\n
 
 ### SCAN_INTERVAL
-> Type: number
-> Default: 5000
-> Description: How long between scans in milliseconds, don't put too low then you will get ratelimited
+> Type: number\n
+> Default: 5000\n
+> Description: How long between scans in milliseconds, don't put too low then you will get ratelimited\n
 
 ## misc
 1. i cant confirm if it does or doesn't work as most of it is expected behavior instead of actually tested
