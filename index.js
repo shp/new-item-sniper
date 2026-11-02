@@ -129,7 +129,8 @@ const configFormat = `{\n\t"ROBLOSECURITY": "INSERT ROBLOSECURITY HERE",\n\t"AUT
             return false; // already own the item
         }
         let isSellable = false;
-        for (const rest of data.itemRestrictions) {
+        const restrictions = data.itemRestrictions ?? [];
+        for (const rest of restrictions) {
             if (rest == "Limited" || rest == "LimitedUnique" || rest == "Collectible" && buyCollectibles) {
                 isSellable = true;
                 break;
