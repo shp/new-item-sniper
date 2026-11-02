@@ -34,6 +34,11 @@ The only one not preinstalled with Node is otpauth
 - Default: 5000
 - Description: How long between scans in milliseconds, don't put too low then you will get ratelimited
 
+### BUY_COLLECTIBLES
+- Type: boolean
+- Default: false
+- Description: Collectibles are the limitedv2 items that are offsale + not tradable but are shown as limited. I made this an option because of the recent Dowager of the Federation changing item restrictions to become LimitedUnique and therefore it becomes sellable. If this is enabled you could buy something and it doesn't end up going fully limited so beware.
+
 ## misc
 - i cant confirm if it does or doesn't work as most of it is expected behavior instead of actually tested
 - this was just something quickly put together, there is no proxy support and you can change code around if you want to add/change features

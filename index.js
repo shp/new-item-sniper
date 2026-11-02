@@ -18,6 +18,7 @@ const configFormat = `{\n\t"ROBLOSECURITY": "INSERT ROBLOSECURITY HERE",\n\t"AUT
     if (!authkey) throw new Error(`No AUTH_KEY passed into config, looking for: ${configFormat}`);
     const cookies = ".ROBLOSECURITY=" + config.ROBLOSECURITY;
     const scanInterval = config.SCAN_INTERVAL ?? 5000;
+    const buyCollectibles = config.BUY_COLLECTIBLES ?? false;
 
     const defaultHeaders = {
         Cookie: cookies,
@@ -129,7 +130,7 @@ const configFormat = `{\n\t"ROBLOSECURITY": "INSERT ROBLOSECURITY HERE",\n\t"AUT
         }
         let isSellable = false;
         for (const rest of data.itemRestrictions) {
-            if (rest == "Limited" || rest == "LimitedUnique") {
+            if (rest == "Limited" || rest == "LimitedUnique" || rest == "Collectible" && buyCollectibles) {
                 isSellable = true;
                 break;
             }
@@ -195,6 +196,7 @@ const configFormat = `{\n\t"ROBLOSECURITY": "INSERT ROBLOSECURITY HERE",\n\t"AUT
     }
     async function scan() {
         try {
+            await addRobloxReq();
             const res = await fetch(`https://catalog.roblox.com/v2/search/items/details?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&creatorName=roblox&salesTypeFilter=1&sortType=3&limit=10`, {
                 headers: defaultHeaders
             });

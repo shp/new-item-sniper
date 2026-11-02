@@ -1,5 +1,6 @@
 {
     "ROBLOSECURITY": "",
     "AUTH_KEY": "",
-    "SCAN_INTERVAL": 5000
+    "SCAN_INTERVAL": 5000,
+    "BUY_COLLECTIBLES": false
 }
