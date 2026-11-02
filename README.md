@@ -1,6 +1,10 @@
 # New Item Sniper for Roblox
+
+## install
+> git clone https://github.com/shp/new-item-sniper
+
 ## run
-This was made using Node and NPM so it is recommended to use that to run and package manage. You can use either of the ways below to start if you just git pull this.
+This was made using Node and NPM so it is recommended to use that to run and package manage. You can use either of the ways below to start if you just git clone this.
 - npm start
 - node index.js
 
