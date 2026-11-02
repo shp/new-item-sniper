@@ -203,7 +203,7 @@ const configFormat = `{\n\t"ROBLOSECURITY": "INSERT ROBLOSECURITY HERE",\n\t"AUT
             for (const item of data) {
                 if (!checkItem(item)) continue;
                 console.log(`Found potential item to purchase: ${item.name}`);
-                await buy(item);
+                await buy(item.id);
             }
         } catch (err) {
             console.error(err);
