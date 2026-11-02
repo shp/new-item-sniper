@@ -17,7 +17,7 @@ The only one not preinstalled with Node is otpauth
 }
 ```
 
-### ROLBOSECURITY
+### ROBLOSECURITY
 - Type: string
 - Description: Put your .ROBLOSECURITY cookie from roblox as the value
 
