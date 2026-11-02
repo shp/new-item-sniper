@@ -155,7 +155,6 @@ const configFormat = `{\n\t"ROBLOSECURITY": "INSERT ROBLOSECURITY HERE",\n\t"AUT
             headers: await makeHeaders(),
             body: JSON.stringify({itemIds: [collectibleItemId]})
         });
-        console.log(res2);
         if (!res2.ok) throw new Error("buy: Unknown error 2");
         const data2 = await res2.json();
         const collectibleProductId = data2.collectibleProductId;
