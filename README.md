@@ -45,3 +45,5 @@ The only one not preinstalled with Node is otpauth
 - this was just something quickly put together, there is no proxy support and you can change code around if you want to add/change features
 - if you use any code from this i would like some form of credit (to my github)
 - ⚠️ I am not responsible for anything you use this for as this is just a Proof of Concept (POC), and is just to show off something that is possible
+- There is a possibility that an api request could be flagged by FunCaptcha/Arkose Labs and you would have to add support to handle that.
+- There is a possibility that an api request could be flagged by "Proof of Work"/PerimeterX and you would have add support to handle that.
